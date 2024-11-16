@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="files/logo.innn.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav .logo {
+            width: 150px;
+        }
+
+        .navbar {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #1abc9c;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            padding: 40px 20px;
+        }
+
+        .about .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about .main:hover {
+            transform: scale(1.05);
+        }
+
+        .about img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .abt-text {
+            padding: 30px;
+            max-width: 500px;
+            color: #333;
+        }
+
+        .abt-text h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .abt-text h1 span {
+            color: #1abc9c;
+        }
+
+        .abt-text p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #7f8c8d;
+        }
+
+        /* Button */
+        .connectbtn {
+            display: inline-block;
+            font-size: 1.2rem;
+            padding: 12px 30px;
+            background-color: #1abc9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .connectbtn:hover {
+            background-color: #16a085;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer .footer-content {
+            margin-bottom: 20px;
+        }
+
+        .footer .footlinks ul {
+            list-style-type: none;
+        }
+
+        .footer .footlinks a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer .footlinks a:hover {
+            color: #1abc9c;
+        }
+
+        .end {
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .about .main {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .abt-text {
+                padding: 15px;
+            }
+
+            .abt-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .abt-text p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="aboutbody">
+    <nav>
+        <img src="files/logo.innn.png" class="logo" alt="Logo" title="KS Transport">
+        <ul class="navbar">
+            <li>
+                <a href="./index.html">Home</a>
+                <a href="./index.html#locations">Locations</a>
+                <a href="./index.html#package">Packages</a>
+                <a href="./about.html">About Us</a>
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="about">
+        <div class="main">
+            <img src="files/aboutpic.jpg" alt="KS Transport Group" />
+            <div class="abt-text">
+                <h1>About <span>Us</span></h1>
+                <p>KS Transport Group, led by the enthusiastic Saiful Zafar, is your go-to partner for seamless tours and travel experiences. Specializing in transport for tourists, we provide safe, comfortable, and personalized journeys to unforgettable destinations. With Saiful’s vision and dedication, KS Transport Group has become known for reliable service and a passion for creating memorable travel moments. Choose us for a journey where every destination brings joy and every mile is a story worth sharing.</p>
+                <a href="https://www.instagram.com/zafar_saifu_?igsh=MXJ1eXc4eW4waTYybQ==" class="connectbtn" target="_blank">Connect with me!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="end">
+            <p>© 2024 <strong>KS Transport</strong> | All Rights Reserved<br>
+               Website Developed by <strong><em><a href="https://www.instagram.com/mohsin_nnn/profilecard/?igsh=aGxtZWRycTlkZ29l" target="_blank" class="developer-link">Mohsin Hilal</a></em></strong>
+            </p>
+        </div>
+        
+        <style>
+            .end {
+                text-align: center;
+                background-color: #333;
+                color: white;
+                padding: 20px;
+                margin-top: 40px;
+                font-size: 1em;
+            }
+        
+            .end p {
+                margin: 0;
+                line-height: 1.6;
+            }
+        
+            .end strong {
+                color: #FFD700; /* Gold color for emphasis */
+            }
+        
+            .end em {
+                color: #1E90FF; /* Blue color for emphasis */
+            }
+        
+            .end p br {
+                margin: 10px 0; /* Space between lines */
+            }
+        
+            .end:hover {
+                background-color: #444; /* Slight darkening on hover */
+            }
+        
+            .developer-link {
+                color: #1E90FF;
+                text-decoration: none;
+                font-style: normal;
+            }
+        
+            .developer-link:hover {
+                text-decoration: underline;
+            }
+        </style>
+        
+    
+     
+    </body>
+    </html>
+    

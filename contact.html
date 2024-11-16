@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact KS Transport - Your reliable transport partner. Reach us via WhatsApp or call directly.">
+    <title>Contact | KS Transport</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Cinematic background */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle at center, #1b1f2a, #000);
+            overflow: hidden;
+            color: #fff;
+        }
+
+        /* Dynamic glowing text */
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            white-space: nowrap;
+            font-size: 10em;
+            font-weight: 900;
+            color: rgba(255, 0, 0, 0.08);
+            text-transform: uppercase;
+            pointer-events: none;
+            animation: slideText 15s linear infinite;
+            text-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+        }
+
+        @keyframes slideText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Contact card with a metallic finish */
+        .contact-section {
+            position: relative;
+            text-align: center;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(255, 0, 0, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.1);
+            background: linear-gradient(135deg, #2a2f3a, #1b1f26);
+            max-width: 420px;
+            z-index: 1;
+            border: 2px solid rgba(255, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(255, 0, 0, 0.6), inset 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 0, 0, 0.8);
+        }
+
+        /* Button container */
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Dynamic buttons with glowing effect */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1em;
+            padding: 12px 25px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(45deg, #ff0000, #9e0000);
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(255, 0, 0, 0) 50%);
+            transform: rotate(-45deg);
+            animation: pulse 5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.5) rotate(-45deg);
+            }
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.8);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(45deg, #0dc143, #068f2a);
+        }
+
+        .btn-whatsapp:hover {
+            box-shadow: 0 10px 30px rgba(0, 255, 0, 0.6);
+        }
+
+        .btn-call {
+            background: linear-gradient(45deg, #ff4500, #cc3700);
+        }
+
+        .btn-call:hover {
+            box-shadow: 0 10px 30px rgba(255, 69, 0, 0.8);
+        }
+
+        .btn svg {
+            margin-right: 8px;
+            width: 1.4em;
+            height: 1.4em;
+        }
+
+        @media (max-width: 480px) {
+            .background-text {
+                font-size: 6em;
+            }
+
+            .contact-section {
+                padding: 30px 20px;
+                width: 90%;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Background animated text -->
+<div class="background-text" aria-hidden="true">KS Transport</div>
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <h2 class="contact-title">Contact Us</h2>
+    <div class="contact-buttons">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/916395540958" class="btn btn-whatsapp" target="_blank" aria-label="Contact us on WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                <path d="M12 2C6.486 2 2 6.486 2 12c0 1.732.441 3.367 1.209 4.813L2 22l5.188-1.209A9.948 9.948 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2zm-.393 15.857c-2.841-.155-5.17-2.507-5.393-5.393-.086-1.11.293-2.221 1.076-3.077l.146-.173c.476-.516.947-.678 1.455-.528l.155.041c.396.117.638.52.587.928-.058.473-.269.947-.61 1.269.305.345.654.657 1.051.954.398.297.811.55 1.233.762.305.173.648.104.896-.146l.074-.085c.267-.322.645-.524 1.064-.528.43-.003.828.185 1.08.505l.065.088c.248.352.198.836-.126 1.135-.44.399-.915.813-1.428 1.073-.615.31-1.194.318-1.813.08-.716-.283-1.392-.678-2.012-1.192-.635-.528-1.14-1.155-1.524-1.884-.394-.746-.61-1.548-.637-2.393.013-.445.31-.789.751-.883l.108-.017c.34-.056.649-.055.965.008.562.111 1.136.352 1.629.678.497.328.962.738 1.409 1.216.451.475.794 1.001 1.036 1.595.186.454.223.934.105 1.404l-.007.032c-.117.52-.4.944-.817 1.217-.416.271-.843.273-1.303.067-.245-.108-.48-.241-.704-.395-.229-.158-.472-.313-.713-.486-.442-.317-.738-.838-.817-1.379-.06-.408.18-.778.562-.856.236-.048.478-.029.708.04.378.11.748.267 1.105.449.42.206.823.451 1.226.725.515.348.92.793 1.173 1.366.254.576.282 1.168.077 1.755-.18.52-.573.845-1.076.886l-.037.003z"/>
+            </svg>
+            WhatsApp
+        </a>
+
+        <!-- Call Button -->
+        <a href="tel:+916395540958" class="btn btn-call" aria-label="Call us">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                <path d="M21 16.34v3.66c0 1.104-.895 2-2 2-9.942 0-18-8.059-18-18 0-1.105.896-2 2-2h3.66c.89 0 1.677.583 1.925 1.442l1.045 3.755a1.99 1.99 0 01-.55 1.955l-1.83 1.83c1.26 2.412 3.445 4.596 5.857 5.857l1.83-1.83a1.99 1.99 0 011.955-.55l3.755 1.045a2 2 0 011.442 1.925z"/>
+            </svg>
+            Call Us
+        </a>
+    </div>
+</section>
+
+</body>
+</html>
